@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE databaseChangeLog [
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+    <!-- Beispielhaftes update der Datenbank -->
+
+    <!--<changeSet id="1" author="Dennis">
+
+        <createTable tableName="Adresse">
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="hausnummer" type="INT"/>
+            <column name="ort" type="VARCHAR(50)"/>
+            <column name="postleitzahl" type="INT"/>
+            <column name="strasse" type="VARCHAR(50)"/>
+            <column name="zusatz" type="VARCHAR(50)"/>
+        </createTable>
+
+        <createTable tableName="Anzeige">
+            <column name="beschreibung" type=""></column>
+        </createTable>
+
+    </changeSet>
+    -->
+
+</databaseChangeLog>

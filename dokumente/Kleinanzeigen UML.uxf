@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>465</x>
+      <y>125</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>Benutzer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>295</x>
+      <y>145</y>
+      <w>400</w>
+      <h>710</h>
+    </coordinates>
+    <panel_attributes>hsos.swa.benutzer
+--
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>305</x>
+      <y>705</y>
+      <w>380</w>
+      <h>145</h>
+    </coordinates>
+    <panel_attributes>.gateway
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>305</x>
+      <y>165</y>
+      <w>380</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>.boundary
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>305</x>
+      <y>360</y>
+      <w>380</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>.control
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>305</x>
+      <y>555</y>
+      <w>380</w>
+      <h>145</h>
+    </coordinates>
+    <panel_attributes>.entity
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>315</x>
+      <y>185</y>
+      <w>200</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>BenutzerResource
+--
+-benutzerControl:KundeControl
+
++FindById:Response
++addBenutzer:Response
++updateBenutzer:Response
+
+bg=red
+layer=2
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>380</y>
+      <w>205</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+BenutzerControl
+--
+
+
+bg=orange
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>315</x>
+      <y>570</y>
+      <w>200</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+BenutzerKatalog
+--
+bg=green
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>565</x>
+      <y>570</y>
+      <w>85</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Benutzer
+--
+-id:Long
+-vorName:String
+-nachName:String
+-adresse:Adresse
+
+
+
+bg=yellow
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>565</x>
+      <y>640</y>
+      <w>85</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Adresse
+--
+
+-plz:String
+-ort:String
+-strasse:String
+-hausNr:String
+
+
+
+bg=yellow
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>315</x>
+      <y>725</y>
+      <w>220</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Repository&gt;&gt;
+BenutzerRepository
+--
+
+-em:EntityManager
+
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>595</y>
+      <w>65</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>620</y>
+      <w>15</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>485</y>
+      <w>15</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>290</y>
+      <w>15</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>650</y>
+      <w>15</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>925</x>
+      <y>125</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>Anzeige
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>755</x>
+      <y>145</y>
+      <w>400</w>
+      <h>710</h>
+    </coordinates>
+    <panel_attributes>hsos.swa.anzeige
+--
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>765</x>
+      <y>705</y>
+      <w>380</w>
+      <h>145</h>
+    </coordinates>
+    <panel_attributes>.gateway
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>765</x>
+      <y>165</y>
+      <w>380</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>.boundary
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>765</x>
+      <y>360</y>
+      <w>380</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>.control
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>765</x>
+      <y>555</y>
+      <w>380</w>
+      <h>145</h>
+    </coordinates>
+    <panel_attributes>.entity
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>775</x>
+      <y>185</y>
+      <w>200</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>AnzeigeResource
+--
+-anzeigeControl:KundeControl
+
++FindById:Response
++addAnzeige:Response
++updateAnzeige:Response
+
+bg=red
+layer=2
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>770</x>
+      <y>380</y>
+      <w>205</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+AnzeigeControl
+--
+
+
+bg=orange
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>775</x>
+      <y>570</y>
+      <w>200</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+AnzeigeKatalog
+--
+bg=green
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1025</x>
+      <y>570</y>
+      <w>85</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Anzeige
+--
+-id:Long
+-Name:String
+-Preis:double
+-Beschreibung: Beschreibung
+
+
+
+bg=yellow
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1025</x>
+      <y>640</y>
+      <w>85</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Beschreibung
+--
+
+-beschreibung:String
+
+
+
+bg=yellow
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>775</x>
+      <y>725</y>
+      <w>220</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Repository&gt;&gt;
+AnzeigeRepository
+--
+
+-em:EntityManager
+
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>595</y>
+      <w>65</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1060</x>
+      <y>620</y>
+      <w>15</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>485</y>
+      <w>15</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>290</y>
+      <w>15</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>650</y>
+      <w>15</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1380</x>
+      <y>125</y>
+      <w>50</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>Warenkorb</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1210</x>
+      <y>145</y>
+      <w>400</w>
+      <h>710</h>
+    </coordinates>
+    <panel_attributes>hsos.swa.warenkorb
+--
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1220</x>
+      <y>705</y>
+      <w>380</w>
+      <h>145</h>
+    </coordinates>
+    <panel_attributes>.gateway
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1220</x>
+      <y>165</y>
+      <w>380</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>.boundary
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1220</x>
+      <y>360</y>
+      <w>380</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>.control
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1220</x>
+      <y>555</y>
+      <w>380</w>
+      <h>145</h>
+    </coordinates>
+    <panel_attributes>.entity
+--
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1230</x>
+      <y>185</y>
+      <w>200</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>WarenkorbResource
+--
+-WarenkorbControl:WarenkorbControl
+
++FindById:Response
++addWarenkorb:Response
++updateWarenkorb:Response
+
+bg=red
+layer=2
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1225</x>
+      <y>380</y>
+      <w>205</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Service&gt;&gt;
+WarenkorbControl
+--
+
+
+bg=orange
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1230</x>
+      <y>570</y>
+      <w>200</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+WarenkorbKatalog
+--
+bg=green
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1480</x>
+      <y>570</y>
+      <w>85</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Warenkorb
+--
+-id:Long
+-waren:List
+
+
+
+bg=yellow
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1230</x>
+      <y>725</y>
+      <w>220</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Repository&gt;&gt;
+WarenkorbRepository
+--
+
+-em:EntityManager
+
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1425</x>
+      <y>595</y>
+      <w>65</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1295</x>
+      <y>485</y>
+      <w>15</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1295</x>
+      <y>290</y>
+      <w>15</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1295</x>
+      <y>650</y>
+      <w>15</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
